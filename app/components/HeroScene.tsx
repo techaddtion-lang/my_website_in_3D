@@ -1,5 +1,7 @@
 'use client';
 
+'use client';
+
 import { Canvas } from '@react-three/fiber';
 import { Float, OrbitControls, Sparkles } from '@react-three/drei';
 
