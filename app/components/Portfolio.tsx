@@ -1293,6 +1293,8 @@ const projects = [
     image:
       'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80',
 
+    highlight: 'Donor discovery and admin workflows',
+
     github: 'https://github.com/techaddtion-lang/',
 
     demo: '#contact',
@@ -1326,6 +1328,8 @@ const projects = [
     image:
       'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1200&q=80',
 
+    highlight: 'Real-time signals and AI-powered insights',
+
     github: 'https://github.com/techaddtion-lang/',
 
     demo: '#contact',
@@ -1357,6 +1361,8 @@ const projects = [
 
     image:
       'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1200&q=80',
+
+    highlight: 'Property listings and data management',
 
     github: 'https://github.com/techaddtion-lang/',
 
@@ -1393,6 +1399,32 @@ const education = [
 
     description:
       'Built full-stack applications, explored AI workflows, worked with databases and data analysis, and developed problem-solving skills through DSA practice.',
+  },
+
+  {
+    period: 'College Hackathon',
+
+    title:
+      'Hackathon Participant',
+
+    place:
+      'Gandhi Engineering College',
+
+    description:
+      'Collaborated with a team to design and build a practical technology solution under time constraints, strengthening rapid prototyping, teamwork, and problem-solving skills.',
+  },
+
+  {
+    period: 'NPTEL Course',
+
+    title:
+      'Internet of Things and Edge Computing',
+
+    place:
+      'IIT Kharagpur',
+
+    description:
+      'Studied connected devices, IoT communication, sensor data, edge architecture, and distributed processing through an NPTEL course from IIT Kharagpur.',
   },
 ];
 
@@ -1528,14 +1560,14 @@ function ProjectCard({
       {/* Project Preview */}
 
       <div
-        className={`relative overflow-hidden rounded-[1.4rem] border border-white/10 p-4 ${project.previewClass}`}
+        className={`relative overflow-hidden rounded-[1.4rem] border border-white/10 p-3 sm:p-4 ${project.previewClass}`}
       >
       <Image
         src={project.image}
         alt={`${project.name} preview`}
         width={1200}
         height={675}
-        className="h-44 w-full rounded-2xl border border-white/10 object-cover opacity-90 transition duration-500 group-hover:scale-[1.03] group-hover:opacity-100"
+        className="h-36 w-full rounded-2xl border border-white/10 object-cover opacity-90 transition duration-500 group-hover:scale-[1.03] group-hover:opacity-100 sm:h-44"
         loading="lazy"
       />
 
@@ -1547,16 +1579,10 @@ function ProjectCard({
           <span className="h-2.5 w-2.5 rounded-full bg-emerald-400 shadow-[0_0_14px_rgba(52,211,153,0.85)]" />
         </div>
 
-        <div className="space-y-3">
-          <div className="h-24 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm" />
-
-          <div className="grid grid-cols-3 gap-3">
-            <div className="h-14 rounded-xl border border-white/10 bg-white/5" />
-            <div className="h-14 rounded-xl border border-white/10 bg-white/5" />
-            <div className="h-14 rounded-xl border border-white/10 bg-white/5" />
-          </div>
-
-          <div className="h-10 w-3/5 rounded-full border border-cyan-400/30 bg-cyan-400/10" />
+        <div className="mt-3 rounded-xl border border-white/10 bg-slate-950/35 px-3 py-2.5">
+          <p className="text-xs font-medium leading-5 text-cyan-100">
+            {project.highlight}
+          </p>
         </div>
       </div>
 
