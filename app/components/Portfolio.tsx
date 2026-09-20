@@ -1144,8 +1144,7 @@ import {
 } from 'lucide-react';
 
 import { useEffect, useRef, useState } from 'react';
-import HeroScene from './HeroScene';
-
+in
 /* =========================================================
    NAVIGATION
 ========================================================= */
@@ -1899,7 +1898,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* 3D Hero */}
+            {/* Hero image */}
 
             <motion.div
               initial={
@@ -1925,7 +1924,17 @@ export default function Portfolio() {
                 ease: 'easeOut',
               }}
             >
-              <HeroScene />
+              <div className="relative h-[320px] w-full overflow-hidden rounded-[2rem] border border-white/10 bg-slate-950/60 shadow-[0_0_80px_rgba(96,165,250,0.15)] sm:h-[420px]">
+                <Image
+                  src="/hero-portfolio.png"
+                  alt="Papu Sahoo portfolio preview"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  className="object-cover object-top"
+                  priority
+                />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/35 via-transparent to-transparent" />
+              </div>
             </motion.div>
 
           </motion.div>
