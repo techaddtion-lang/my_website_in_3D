@@ -1895,7 +1895,7 @@ export default function Portfolio() {
                 </a>
 
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/papu-sahoo-0a908431/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="LinkedIn profile"
